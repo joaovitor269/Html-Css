@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens que se adaptam</title>
+</head>
+<body>
+    <h1>Imagens Tamnho G, Tamanho M e Tamanho P</h1>
+    <p>Com a Imagem de Netuno editada no Gimp</p>
+    <picture>
+        <source media="(max-width: 650px)" srcset="imagens/foto-netuno-p.jpg" type="image/jpg">
+        <source media="(max-width: 850px)" srcset="imagens/foto-netuno-m.jpg" type="image/jpg">
+        <img src="imagens/foto-netuno-g.jpg" alt="Imagem flexível"><!--Usamos tamanho da Imagem G: 800px, a Imagem M: 600px, e a Imagem P: 400px.-->
+    </picture>
+</body>
+</html>
