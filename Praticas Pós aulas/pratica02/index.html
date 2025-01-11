@@ -3,86 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listas Jogadores SPFC</title>
+    <title>Teste de Login</title>
+    <style>
+        .flex-contend{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .name{
+            flex: 1 0 140px;
+            border: 3px solid rgba(0, 0, 0, 0.795);
+            padding: 10px;
+        }
+
+        .email{
+            flex: 1 0 120px;
+            border: 3px solid rgba(0, 0, 0, 0.795);
+        }
+
+        button{
+            flex: 1 0 80px;
+            color: white;
+            background-color: rgb(209, 105, 105);
+            border: 3px solid rgba(0, 0, 0, 0.795);
+        }
+
+        button:hover{
+            background-color: blueviolet;
+        }
+    </style>
 </head>
 <body>
-    <h1>Spfc e Free Fire</h1>
-    <h2>Free Fire Habilidades Camps</h2>
-    <ol type="1">
-     <li>Personagens de Rush para Camps Free Fire</li>
-         <ul type="square"> <!--Contrua a tabela por etapas eu não fiz e gastei mais linhas pois precisa colocar 1-rush 2-rush granadeiro e etc dentro de uma ul só, mais acabei gastando mais linhas pois fiz 1-rush e ja pulei para as habilidades dentro de 1-rush. tem como arrumar vou arrumar...-->
-            <li>1- Rush</li>
-            <ul type="disc">
-                <li>Joseph</li>
-                <li>Thiva</li>
-                <li>Kairos</li>
-                <li>Shani</li>
-                <li>Antônio</li>
-                <li>Wowfrah</li>
-                <li>Tatsuya</li>
-            </ul>
-         </ul>
-     <li>Personagem Para 2 Rush em Camps Free fire</li> 
-         <ul type="square">
-            <li>2- Rush</li>
-            <ul type="disc">
-                <li>Thiva</li>
-                <li>Shani</li>
-                <li>Antônio</li>
-                <li>Wowfrah</li>
-                <li>Tatsuya</li>
-                <li>X-trema</li>
-            </ul>
-         </ul>
-     <li>Personagem Para Granadiero em Camp Free Fire</li>
-         <ul type="square">
-            <li>Granadeiro</li>
-            <ul type="disc">
-                <li>Alvaro</li>
-                <li>Thiva</li>
-                <li>Moco</li>
-                <li>Antônio</li>
-                <li>Wowfrah</li>
-                <li>Tatsuya</li>
-                <li>A124</li>
-                <li>Skiller</li>
-            </ul>
-         </ul>
-     <li>Personagem Para Suporte em Camp Free Fire</li>
-         <ul type="square">
-            <li>Suporte</li>
-            <ul type="disc">
-                <li>Íris</li>
-                <li>Rafael</li>
-                <li>Maro</li>
-                <li>Moco</li>
-                <li>Suzi</li>
-            </ul>
-        </ul>
-    </ol>
-    <h2>Time 2 - Com o que temos agora</h2>
-    <ul type="square">
-        <li>Rafael</li>
-        <li>Igor V.</li>
-        <li>Arboleda</li>
-        <li>Alan Franco</li>
-        <li>Wellington</li>
-        <li>Luiz Gustavo</li>
-        <li>Bobadilla</li>
-        <li>Willian Gomes</li>
-        <li>Luciano</li>
-        <li>Lucas</li>
-        <li>Calleri</li>
-    </ul>
-    <h2>Lista de Contratações</h2>
-     <ul type="disc">
-        <li>1- Goleiro</li>
-        <li>1- Lateral Esq</li>
-        <li>1- Lateral Dir</li>
-        <li>2- Volantes/meio-campo</li>
-        <li>1- Meia</li>
-        <li>1- Atacante</li>
-    </ul>  
+    <div class="flex-contend">
+    <input class="name" placeholder="Username" />
+    <input class="email" placeholder="Password" />
+    <button>Submit</button>
+    </div>
     
 
 </body>
