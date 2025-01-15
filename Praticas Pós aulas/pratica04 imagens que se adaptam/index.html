@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagens que se adaptam</title>
+    <style>
+        div.quadrado{
+            border: 5px solid black;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            border-radius: 5px;
+            background-color: lightblue;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Imagens Tamnho G, Tamanho M e Tamanho P</h1>
-    <p>Com a Imagem de Netuno editada no Gimp</p>
-    <picture>
-        <source media="(max-width: 650px)" srcset="imagens/foto-netuno-p.jpg" type="image/jpg">
-        <source media="(max-width: 850px)" srcset="imagens/foto-netuno-m.jpg" type="image/jpg">
-        <img src="imagens/foto-netuno-g.jpg" alt="Imagem flexível"><!--Usamos tamanho da Imagem G: 800px, a Imagem M: 600px, e a Imagem P: 400px.-->
-    </picture>
+    <div class="quadrado" id="q1">
+        <img src="imagens/logo-adidas.png" alt="adidas" width="200px" height="200px">
+    </div>
+    <div class="quadrado" id="q2">
+        <img src="imagens/logo-mcdonalds.jpg" alt="mcdonalds" width="200px" height="200px">
+    </div>
+    <div class="quadrado" id="q3">
+        <img src="imagens/logo-nike.jpg" alt="nike" width="200px" height="200px">
+    </div>
 </body>
 </html>
