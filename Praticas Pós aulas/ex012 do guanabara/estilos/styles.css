@@ -4,6 +4,12 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+    :root {
+        --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+        --fonte2: "Passion One", serif;
+        --fonte3: "Sriracha", serif;
+    }
+
     * {
         margin: 0px;
         padding: 0px;
@@ -12,6 +18,7 @@
     html, body {
         min-height: 100vh;
         background-color: darkgray;
+        font-family: var(--fonte1);
     }
 
     header {
@@ -21,8 +28,8 @@
     }
 
     header > h1 {
-        font-size: 8em;
-        font-family: "Passion One", serif;
+        font-size: 10vw;
+        font-family: var(--fonte2);
         font-variant: small-caps;
         font-weight: bold;
         padding-top: 50px;
@@ -30,12 +37,10 @@
 
     header p {
         font-size: 1em;
-        font-family: Verdana, Tahoma, sans-serif;
         padding-bottom: 50px;
     }
 
     header a, footer a {
-        font-family: Verdana, Tahoma, sans-serif;
         text-decoration: none;
         color: white;
         font-weight: bolder;
@@ -46,8 +51,8 @@
     }
 
     section {
-        font-family: "Sriracha", serif;
-        font-size: 3em;
+        font-family: var(--fonte3);
+        font-size: 3.5vw;
         padding-top: 10vh;
         padding-bottom: 10vh;
         line-height: 2em;
@@ -66,7 +71,8 @@
 
     section.imagem > p {
         background-color: rgba(0, 0, 0, 0.253);
-        width: 600px;
+        display: inline-block;
+        padding: 5px;
     }
 
     #contain1 {
@@ -94,6 +100,3 @@
         padding: 10px;
     }
 
-    footer p {
-        font-family: Verdana, Tahoma, sans-serif;
-    }
