@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo</title>
+    <title>Treinando Efeito Parallax</title>
     <style>
 
         * {
@@ -24,58 +24,84 @@
         header {
             background-color: black;
             background-image: url(./imagens/wallpaper005.jpg);
-            background-position: center center;
-            padding: 40px;
+            background-position: center top;
+            background-attachment: fixed;
+            padding: 12vh;
             text-align: center;
             box-shadow: 1px 1px 10px black;
         }
 
         header > h1 {
-            font-size: 6vw;
-            padding: 10px;
+            font-size: 7.5vw;
+            padding-bottom: 15px;
         }
 
         header p {
-            font-size: 1.7em;
+            font-size: 1.3em;
             font-weight: bold;
         }
 
-        main p {
-            margin-top: 40px;
-            font-size: 2em;
-            line-height: 1.5em;
+        h1:hover {
+            color: rgb(180, 158, 31);
+            text-decoration: underline;
+        }
+
+        section {
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            padding-left: 30px;
+            line-height: 1.7em;
+            font-size: 3.7vw;
+        }
+
+        section > p {
+            padding-bottom: 2em;
+        }
+
+        section.normal {
+            color: black;
         }
 
         section.imagem {
-            background-color: black;
+            background-color: rgb(53, 47, 47);
             color: white;
-            padding: 10px;
-            margin-top: 40px;
-        }
-
-        section.imagem > p {
-            background-color: rgba(128, 128, 128, 0.459);
-            display: inline-block;
-        }
-
-        section#img01 {
-            background-image: url(./imagens/wallpaper002.jpg);
-            background-repeat: no-repeat;
-            background-position: center center;
+            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.651);
             background-size: cover;
             background-attachment: fixed;
         }
 
+        section.imagem > p {
+            background-color: rgba(0, 0, 0, 0.452);
+            display: inline-block;
+            padding: 5px;
+            text-shadow: 2px 2px 10px black;
+        }
 
+        section#img01 {
+            background-image: url(./imagens/wallpaper002.jpg);
+            background-position: center center;
+        }
 
+        section#img02 {
+            background-image: url(./imagens/Imagem\ netuno.jpg);
+            background-position: center center;
+        }
 
-
+        footer {
+            background-color: rgb(163, 163, 54);
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.1em;
+            
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Fundo Guanabara</h1>
-        <p>Módulo 4</p>
+        <h1>Treino Com Parallax</h1>
+        <p>Treino para início do Módulo 4</p>
     </header>
     <main>
             <section>
@@ -123,7 +149,7 @@
                 </p>
             </section>
 
-            <section class="imagem">
+            <section class="imagem" id="img02">
                 <p>
                     Tenho saudade das cartas <br>
                     Escritas com a própria mão <br>
