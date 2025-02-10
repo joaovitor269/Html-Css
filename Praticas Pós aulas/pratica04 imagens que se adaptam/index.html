@@ -5,26 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhando com Imagens e Div</title>
     <style>
-        div.quadrado{
-            border: 5px solid black;
-            width: 200px;
-            height: 200px;
-            display: inline-block;
+        section.pain{
+            border: 2px solid red;
             border-radius: 5px;
             background-color: lightblue;
-            margin-right: 10px;
+            color: red;
+            font-size: 3em;
+            font-weight: bold;
+            height: 300px;
+            margin-bottom: 2px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
         }
+
+        section#luci {
+            background-image: url(./imagens/luci\ img.jpg);
+            position: relative;
+        }
+
+        section#fubuki {
+            background-image: url(https://www.pichauarena.com.br/wp-content/uploads/2023/08/imagem_2023-08-07_131740328.png);
+            position: relative;
+        }
+
+        section#greghi {
+            background-image: url(https://theradioativo.com.br/wp-content/uploads/2024/02/GGizsQMXgAEou1y.jpg);
+            position: relative;
+        }
+
+        div {
+            position: absolute;
+            left: 5%;
+            top: 0%;
+        }
+
+        #divluci {
+            position: absolute;
+            left: 6%;
+            top: 0%;
+        }
+
+        div > p:hover {
+            color: gold;
+            text-decoration: underline;
+        }
+
+       
     </style>
 </head>
 <body>
-    <div class="quadrado" id="q1">
-        <img src="imagens/logo-adidas.png" alt="adidas" width="200px" height="200px">
-    </div>
-    <div class="quadrado" id="q2">
-        <img src="imagens/logo-mcdonalds.jpg" alt="mcdonalds" width="200px" height="200px">
-    </div>
-    <div class="quadrado" id="q3">
-        <img src="imagens/logo-nike.jpg" alt="nike" width="200px" height="200px">
-    </div>
+    <section class="pain" id="luci">
+        <div id="divluci">
+            <p>Pain Luci</p>
+        </div>
+    </section>
+    <section class="pain" id="fubuki">
+        <div>
+            <p>Pain Fubuki</p>
+        </div>
+    </section>
+    <section class="pain" id="greghi">
+        <div>
+            <p>
+             Pain Greghi
+            </p>
+        </div>
+    </section>
 </body>
 </html>
