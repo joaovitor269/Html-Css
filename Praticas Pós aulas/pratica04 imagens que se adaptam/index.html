@@ -3,73 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalhando com Imagens e Div</title>
+    <title>Teste com iframes</title>
     <style>
-        section.pain{
-            border: 2px solid red;
-            border-radius: 5px;
-            background-color: lightblue;
-            color: red;
-            font-size: 3em;
-            font-weight: bold;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(120, 94, 163, 0.616);
+        }
+
+        iframe {
+            width: 95vw;
             height: 300px;
-            margin-bottom: 2px;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
+            border: 2px solid rgb(70, 70, 185);
         }
 
-        section#luci {
-            background-image: url(./imagens/luci\ img.jpg);
-            position: relative;
+        a {
+            color: white;
+            font-weight: bold;
+            font-size: 1.3em;
         }
 
-        section#fubuki {
-            background-image: url(https://www.pichauarena.com.br/wp-content/uploads/2023/08/imagem_2023-08-07_131740328.png);
-            position: relative;
-        }
-
-        section#greghi {
-            background-image: url(https://theradioativo.com.br/wp-content/uploads/2024/02/GGizsQMXgAEou1y.jpg);
-            position: relative;
-        }
-
-        div {
-            position: absolute;
-            left: 5%;
-            top: 0%;
-        }
-
-        #divluci {
-            position: absolute;
-            left: 6%;
-            top: 0%;
-        }
-
-        div > p:hover {
+        a:hover {
             color: gold;
-            text-decoration: underline;
         }
-
-       
     </style>
 </head>
 <body>
-    <section class="pain" id="luci">
-        <div id="divluci">
-            <p>Pain Luci</p>
-        </div>
-    </section>
-    <section class="pain" id="fubuki">
-        <div>
-            <p>Pain Fubuki</p>
-        </div>
-    </section>
-    <section class="pain" id="greghi">
-        <div>
-            <p>
-             Pain Greghi
-            </p>
-        </div>
-    </section>
+   <h1>Escolha uma opção de página</h1>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt itaque impedit nobis dolore blanditiis similique! Eos asperiores reiciendis recusandae perferendis repellendus beatae quia minima. Quo magni consectetur temporibus excepturi voluptatibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit iure facere dolore maxime pariatur. Porro provident similique molestias, est asperiores, dolor sapiente nesciunt nobis placeat obcaecati repudiandae cum a facilis.</p>
+
+   <ul>
+        <li><a href="./paginas-extras/pag001.html" target="frame">Primeira Página</a></li>
+        <li><a href="./paginas-extras/pag002.html" target="frame">Segunda Página</a></li>
+        <li><a href="./paginas-extras/pag003.html" target="frame">Terceira Página</a></li>
+   </ul>
+
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse fugiat ad distinctio nostrum. Architecto, expedita. Ratione similique voluptatem harum eum nostrum nemo maxime consectetur, consequuntur iste deleniti nesciunt recusandae illo? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus eligendi ex odio magnam asperiores nesciunt delectus voluptates incidunt odit dolores minus vero nostrum rem ullam quibusdam a, veritatis iure est.</p>
+
+   <iframe src="" name="frame" scrolling="yes"></iframe>
+
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic cupiditate omnis veritatis nemo repudiandae? Sint, praesentium fugit? Voluptatem consequuntur optio eveniet unde. Ipsam voluptatibus eius laudantium amet fugit, iure ab.</p>
+
+
 </body>
 </html>
