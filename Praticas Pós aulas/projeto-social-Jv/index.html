@@ -3,46 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste com iframes</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: rgba(120, 94, 163, 0.616);
-        }
-
-        iframe {
-            width: 95vw;
-            height: 300px;
-            border: 2px solid rgb(70, 70, 185);
-        }
-
-        a {
-            color: white;
-            font-weight: bold;
-            font-size: 1.3em;
-        }
-
-        a:hover {
-            color: gold;
-        }
-    </style>
+    <title>Redes Sociais</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-   <h1>Escolha uma opção de página</h1>
-   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt itaque impedit nobis dolore blanditiis similique! Eos asperiores reiciendis recusandae perferendis repellendus beatae quia minima. Quo magni consectetur temporibus excepturi voluptatibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit iure facere dolore maxime pariatur. Porro provident similique molestias, est asperiores, dolor sapiente nesciunt nobis placeat obcaecati repudiandae cum a facilis.</p>
+    <main>
+        <section id="telefone">
+            <iframe src="home.html" name="tela" id="tela" frameborder="0"></iframe>
+        </section>
+        <section id="redes-sociais">
+        <a href="home.html" target="tela"><img src="./imagens/logo-home.jpg" alt="Home"></a><br>  
 
-   <ul>
-        <li><a href="./paginas-extras/pag001.html" target="frame">Primeira Página</a></li>
-        <li><a href="./paginas-extras/pag002.html" target="frame">Segunda Página</a></li>
-        <li><a href="./paginas-extras/pag003.html" target="frame">Terceira Página</a></li>
-   </ul>
+        <a href="youtube.html" target="tela"><img src="./imagens/logo-youtube.jpg" alt="Youtube"></a><br>
 
-   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse fugiat ad distinctio nostrum. Architecto, expedita. Ratione similique voluptatem harum eum nostrum nemo maxime consectetur, consequuntur iste deleniti nesciunt recusandae illo? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus eligendi ex odio magnam asperiores nesciunt delectus voluptates incidunt odit dolores minus vero nostrum rem ullam quibusdam a, veritatis iure est.</p>
+        <a href="github.html" target="tela"> <img src="./imagens/logo-github.jpg" alt="GitHub"></a><br>
 
-   <iframe src="" name="frame" scrolling="yes"></iframe>
+        <a href="instagram.html" target="tela"><img src="./imagens/logo-instagram.jpg" alt="Instagram"></a><br>
 
-   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic cupiditate omnis veritatis nemo repudiandae? Sint, praesentium fugit? Voluptatem consequuntur optio eveniet unde. Ipsam voluptatibus eius laudantium amet fugit, iure ab.</p>
-
-
+        <a href="twitter.html" target="tela"><img src="./imagens/logo-twitter.jpg" alt="Twitter"></a>
+        </section>
+        <div id="texto">
+            <p>Segue Aí</p>
+        </div>
+    </main>
 </body>
 </html>
