@@ -21,7 +21,7 @@ body {
 
 main {
     position: relative;
-    height: 95vh;
+    height: 95dvh;
 }
 
 section#telefone {  
@@ -51,9 +51,9 @@ section#redes-sociais {
 section#redes-sociais img {
     width: 50px;
     border-radius: 50%;
-    margin: 10px 20px 10px 10px;
+    margin: 10px;
     box-sizing: border-box;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
 }
 
 section#redes-sociais img:hover {
