@@ -10,13 +10,13 @@
     <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="iest">Estado</label>
-            <select name="estado" id="iest">
+            <select name="estado" id="iest" required>
 
-                <option value="" selected>--- Escolha ---</option>
+                <option value="" disabled>--- Escolha ---</option>
                 <optgroup label="Região Sudeste">
                     <option value="MG">Minas Gerais</option>
                     <option value="RJ">Rio de Janeiro</option>
-                    <option value="SP">São Paulo</option>
+                    <option value="SP" selected>São Paulo</option>
                 </optgroup>
 
                 <optgroup label="Região Nordeste">
