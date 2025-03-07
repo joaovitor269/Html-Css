@@ -5,41 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de Login</title>
     <style>
-        .flex-contend{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .name{
-            flex: 1 0 140px;
-            border: 3px solid rgba(0, 0, 0, 0.795);
+        fieldset{
             padding: 10px;
+            width: 600px;
+            height: 300px;
+            background-color: rgba(135, 218, 218, 0.37);
+            position: relative;
         }
 
-        .email{
-            flex: 1 0 120px;
-            border: 3px solid rgba(0, 0, 0, 0.795);
+        legend {
+            text-align: left;
+            font-size: 1.4em;
         }
 
-        button{
-            flex: 1 0 80px;
-            color: white;
-            background-color: rgb(209, 105, 105);
-            border: 3px solid rgba(0, 0, 0, 0.795);
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
         }
 
-        button:hover{
-            background-color: blueviolet;
+        .login {
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-color: rgba(102, 120, 134, 0.363);
+            margin: 10px;
+            width: 300px;
         }
+
+        .btn {
+            margin-top: 15px;  
+            
+        }
+         
     </style>
 </head>
 <body>
-    <div class="flex-contend">
-    <input class="name" placeholder="Username" />
-    <input class="email" placeholder="Password" />
-    <button>Submit</button>
-    </div>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div class="container">
+            <fieldset>
+                <legend>Uma Merda</legend>
+                <div>
+                    <input type="text" name="nome" id="inome" placeholder="Name" class="login">
+                </div>
+                <div>
+                    <input type="email" name="email" id="iemail" placeholder="Email" class="login">
+                </div>
+                <div class="btn">
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </div>
+    </form>
     
 
 </body>
