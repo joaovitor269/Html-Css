@@ -22,8 +22,6 @@ Grandes telas: acima de 1200px
 
     nav > ul > li {
         display: inline-block;
-        background-color: rgba(95, 90, 90, 0);
-        font-weight: bold;
         padding-top: 20px;
     }
 
