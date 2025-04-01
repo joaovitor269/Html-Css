@@ -1,9 +1,85 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 div#container {
     display: flex;
-    height: 200px;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    justify-content: space-around;
     align-items: center;
+    height: 150px;
+    background-color: lightslategray;
+    box-shadow: 1px 1px 3px black;
 }
+
+div#logo > a {
+    font-size: 1.7em;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav > ul > li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav > ul > li:hover {
+    transition: 0.2s;
+    color: black;
+    text-decoration: underline;
+}
+
+div#barra-pesquisa {
+    background-color: rgba(77, 132, 167, 0.575);
+    box-shadow: 1px 1px 3px black;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center
+}
+
+div#barra-pesquisa > input {
+    border-radius: 5px;
+    width: 220px;
+    height: 25px;
+    border: 0;
+}
+
+span.material-icons {
+    color: white;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+header {
+    padding: 50px;
+    background-color: beige;
+    height: 200px;
+    width: 40vw;
+    text-align: center;
+}
+
+header > p {
+    font-size: 1.3em;
+}
+
+header > div {
+    margin-top: 20px;
+    font-size: 1.7em;
+}
+
+
+
 
