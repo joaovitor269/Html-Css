@@ -77,42 +77,52 @@ div#conteudo {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
-    height: 300px;
+    height: 400px;
     background-color: rgb(148, 165, 113);
 }
 
 div.caixa {
-    background-color: black;
+    background-color: white;
     height: 200px;
     width: 250px;
     border-radius: 10px;
 }
 
-div#img1 {
-    background: white url(../imagens/img1-celular.webp);
+div.imagem {
+    background-color: black;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
 }
 
-div#img2 {
-    background: white url(../imagens/img2-fogão.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+div#img01 {
+    background: url(../imagens/img1-celular.webp);
+    background-position: left top;
+    height: 200px;
 }
 
-div#img3 {
-    background: white url(../imagens/img3-monitor.webp);
-    background-repeat: no-repeat;
+div#img02 {
+    background: url(../imagens/img2-fogão.webp);
+    background-size: cover;
     background-position: center;
-    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
 }
 
-span.descricao {
+div#img03 {
+    background: url(../imagens/img3-monitor.webp);
+    background-size: cover;
+    height: 200px;
+}
+
+div.caixa > p {
     color: white;
-    transform: translateY(122px);
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(127, 255, 212, 0.253);
+    font-weight: bold;
 }
+
+
 
 
 
