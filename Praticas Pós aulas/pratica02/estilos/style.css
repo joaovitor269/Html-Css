@@ -7,11 +7,17 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
 div#container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+    align-content: space-around;
     height: 150px;
     background-color: lightslategray;
     box-shadow: 1px 1px 3px black;
@@ -35,8 +41,11 @@ nav > ul > li {
 
 nav > ul > li:hover {
     transition: 0.2s;
+    transform: translate(-3px, -2px);
     color: black;
-    text-decoration: underline;
+    font-size: 1.3em;
+    background-color: rgba(123, 185, 164, 0.24);
+    border-radius: 5px;
 }
 
 div#barra-pesquisa {
@@ -47,7 +56,7 @@ div#barra-pesquisa {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 div#barra-pesquisa > input {
@@ -63,16 +72,46 @@ span.material-icons {
     font-size: 1.2em;
 }
 
-header {
-    padding: 50px;
-    background-color: beige;
-    height: 200px;
-    width: 40vw;
-    text-align: center;
+div#conteudo {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    background-color: rgb(148, 165, 113);
 }
 
-header > p {
-    font-size: 1.3em;
+div.caixa {
+    background-color: black;
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+div#img1 {
+    background: white url(../imagens/img1-celular.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+div#img2 {
+    background: white url(../imagens/img2-fogão.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+div#img3 {
+    background: white url(../imagens/img3-monitor.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+span.descricao {
+    color: white;
+    transform: translateY(122px);
 }
 
 
