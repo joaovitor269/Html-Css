@@ -4,12 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-main {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
     width: 100vw;
+    background-color: black;
 }
 
 div#container {
@@ -72,12 +73,30 @@ span.material-icons {
     font-size: 1.2em;
 }
 
-div#conteudo {
+main#conteudo {
+    height: 600px;
+    background-image: url(../imagens/fundo-site.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+
+main p {
+    color: white;
+    padding-left: 40px;
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+div#conteudo-extra {
     display: flex;
     flex-flow: row wrap;
+    align-content: space-evenly;
     align-items: center;
     justify-content: space-around;
-    height: 400px;
+    height: 500px;
     background-color: rgb(148, 165, 113);
 }
 
@@ -86,6 +105,7 @@ div.caixa {
     height: 200px;
     width: 250px;
     border-radius: 10px;
+    margin-bottom: 40px;
 }
 
 div.imagem {
