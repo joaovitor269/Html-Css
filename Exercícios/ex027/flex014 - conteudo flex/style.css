@@ -24,4 +24,29 @@ header.normal, section.normal {
 section.flex-content {
     padding: 20px;
     background-color: rgba(158, 156, 156, 0.836);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+article.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.text {
+    flex: 1 1 600px;
+}
+
+div.media {
+    margin-left: 10px;
+    flex: 1 1 100px;
+}
+
+article.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
 }
