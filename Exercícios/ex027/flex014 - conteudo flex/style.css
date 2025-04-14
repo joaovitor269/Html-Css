@@ -12,9 +12,16 @@ body {
     line-height: 1.5em;
 }
 
-h1, h2, p {
+ p {
     margin-bottom: 10px;
     text-align: justify;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    text-align: left;
+
 }
 
 header.normal, section.normal {
@@ -24,6 +31,7 @@ header.normal, section.normal {
 section.flex-content {
     padding: 20px;
     background-color: rgba(158, 156, 156, 0.836);
+
     display: flex;
     flex-flow: column nowrap;
 }
@@ -31,22 +39,32 @@ section.flex-content {
 article.media-text {
     display: flex;
     flex-flow: row wrap-reverse;
-    align-items: center;
     justify-content: space-between;
-}
-
-div.text {
-    flex: 1 1 600px;
-}
-
-div.media {
-    margin-left: 10px;
-    flex: 1 1 100px;
 }
 
 article.text-media {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
     justify-content: space-between;
+}
+
+article > div.text {
+    flex: 1 1 500px;
+}
+
+article > div.media {
+    flex: 1 0 400px;
+}
+
+div.media > img {
+    display: block;
+    margin: auto;
+    width: 300px;
+    padding: 10px;
+}
+
+div.media > iframe {
+    display: block;
+    margin: auto;
+    width: 90%;
 }
