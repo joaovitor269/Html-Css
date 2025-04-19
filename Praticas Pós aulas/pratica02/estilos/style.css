@@ -8,36 +8,49 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
     height: 100vh;
     width: 100vw;
-    background-color: black;
 }
 
-div#container {
+header#container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
-    align-content: space-around;
-    height: 150px;
-    background-color: lightslategray;
+    height: 295px;
+    background: linear-gradient(to top, #7cc8df, #6e5e5e69);
     box-shadow: 1px 1px 3px black;
+}
+
+div#logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 
 div#logo > a {
     font-size: 1.7em;
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: bold;
+    flex: 1 1 50px;
+    padding: 10px;
+}
+
+nav {
+    width: 100vw;
+    text-align: center;
 }
 
 nav > ul > li {
     list-style: none;
-    display: inline-block;
-    margin-right: 25px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 1.2em;
+    border: 1px solid black;
+    padding: 8px;
+    margin-bottom: 5px;
 }
 
 nav > ul > li:hover {
@@ -45,101 +58,28 @@ nav > ul > li:hover {
     transform: translate(-3px, -2px);
     color: black;
     font-size: 1.3em;
-    background-color: rgba(123, 185, 164, 0.24);
-    border-radius: 5px;
-}
-
-div#barra-pesquisa {
-    background-color: rgba(77, 132, 167, 0.575);
-    box-shadow: 1px 1px 3px black;
-    padding: 10px;
-    border-radius: 20px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-div#barra-pesquisa > input {
-    border-radius: 5px;
-    width: 220px;
-    height: 25px;
-    border: 0;
-}
-
-span.material-icons {
+    background-color: rgba(78, 192, 154, 0.973);
     color: white;
-    padding: 5px;
-    font-size: 1.2em;
+    border-radius: 5px;
 }
 
 main#conteudo {
-    height: 600px;
+    height: 700px;
     background-image: url(../imagens/fundo-site.jpg);
     background-size: cover;
     background-position: center bottom;
     display: flex;
-    flex-flow: row nowrap;
-    align-items: flex-start;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 main p {
     color: white;
-    padding-left: 40px;
     font-size: 2em;
-    margin-top: 30px;
-}
-
-div#conteudo-extra {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: space-evenly;
-    align-items: center;
-    justify-content: space-around;
-    height: 500px;
-    background-color: rgb(148, 165, 113);
-}
-
-div.caixa {
-    background-color: white;
-    height: 200px;
-    width: 250px;
-    border-radius: 10px;
-    margin-bottom: 40px;
-}
-
-div.imagem {
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-div#img01 {
-    background: url(../imagens/img1-celular.webp);
-    background-position: left top;
-    height: 200px;
-}
-
-div#img02 {
-    background: url(../imagens/img2-fogão.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 200px;
-}
-
-div#img03 {
-    background: url(../imagens/img3-monitor.webp);
-    background-size: cover;
-    height: 200px;
-}
-
-div.caixa > p {
-    color: white;
-    text-align: center;
-    padding: 10px;
-    background-color: rgba(127, 255, 212, 0.253);
     font-weight: bold;
+    position: absolute;
+    top: 340px;
+    text-align: center;
 }
 
 
