@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +9,9 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: black;
-    height: 100vh;
-    width: 100vw;
+    line-height: 1.6em;
 }
 
 header#container {
@@ -19,7 +20,7 @@ header#container {
     justify-content: space-around;
     align-items: center;
     height: 295px;
-    background: linear-gradient(to top, #7cc8df, #6e5e5e69);
+    background: linear-gradient(to top, #7cc8df, #42363638);
     box-shadow: 1px 1px 3px black;
 }
 
@@ -34,12 +35,11 @@ div#logo > a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    flex: 1 1 50px;
-    padding: 10px;
+    padding: 15px;
 }
 
 nav {
-    width: 100vw;
+    width: 100%;
     text-align: center;
 }
 
@@ -57,29 +57,87 @@ nav > ul > li:hover {
     transition: 0.2s;
     transform: translate(-3px, -2px);
     color: black;
-    font-size: 1.3em;
     background-color: rgba(78, 192, 154, 0.973);
     color: white;
     border-radius: 5px;
 }
 
 main#conteudo {
-    height: 700px;
-    background-image: url(../imagens/fundo-site.jpg);
-    background-size: cover;
-    background-position: center bottom;
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    padding: 20px;
 }
 
-main p {
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    position: absolute;
-    top: 340px;
+article.text-img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 35px;
+}
+
+article > div.text {
+    flex: 1 1 500px;
+}
+
+article > div.img {
+    flex: 1 0 400px;
+}
+
+div.titulo {
     text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+div.titulo > h1 {
+    color: rgb(14, 173, 221);
+}
+
+div.titulo > h2 {
+    color: skyblue;
+}
+
+div.titulo > h2:hover {
+    color: rgb(179, 162, 69);
+}
+
+div.text > p {
+    color: white;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    font-weight: 600;
+    text-align: justify;
+    margin: 20px 0px;
+    padding-left: 20px;
+}
+
+div.img > img {
+    display: block;
+    margin: auto;
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 50%;
+    opacity: 0,4;
+}
+
+@media screen and (max-width: 768px) { /* VERSÃO MOBILE */
+    div.text > p {
+        padding: 0;
+    }
+
+    div.titulo > h2 {
+        color: skyblue;
+        margin-top: 10px;
+    }
 }
 
 
