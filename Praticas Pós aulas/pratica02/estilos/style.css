@@ -19,7 +19,7 @@ header#container {
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
-    height: 295px;
+    height: 275px;
     background: linear-gradient(to top, #7cc8df, #42363638);
     box-shadow: 1px 1px 3px black;
 }
@@ -35,7 +35,7 @@ div#logo > a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 15px;
+    padding: 12px;
 }
 
 nav {
@@ -50,7 +50,7 @@ nav > ul > li {
     font-size: 1.2em;
     border: 1px solid black;
     padding: 8px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 nav > ul > li:hover {
@@ -87,14 +87,14 @@ article > div.img {
 
 div.titulo {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 div.titulo > h1 {
@@ -122,24 +122,12 @@ div.text > p {
 div.img > img {
     display: block;
     margin: auto;
-    width: 350px;
+    width: 500px;
     height: 250px;
     padding: 10px;
-    border-radius: 50%;
+    border-radius: 20px;
     opacity: 0,4;
 }
-
-@media screen and (max-width: 768px) { /* VERSÃO MOBILE */
-    div.text > p {
-        padding: 0;
-    }
-
-    div.titulo > h2 {
-        color: skyblue;
-        margin-top: 10px;
-    }
-}
-
 
 
 
